@@ -4,4 +4,4 @@
 
 ### Docs
 
-Hello there, looks like you stumbled on something! Well, this is a brand new basic login applicartion built with flask. Documentation can be found [here] (
+Hello there, looks like you stumbled on something! Well, this is a brand new basic login applicartion built with flask. Documentation can be found [here] (https://sites.google.com/view/basicloginapp/home)
