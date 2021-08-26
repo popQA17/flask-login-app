@@ -21,6 +21,7 @@
 sitename = "your site's name" # what your site's name is called
 about_us = "your site's info" # what your site is about. Shows in /about
 announcement = "your site's announcement" # the announcement posted on your site's homepage
+discord = "your discord server invite"
 admin1 = "admin1's username" # Access to admin portal
 admin2 = "admin2's username"
 admin3 = "admin3's username"
@@ -179,7 +180,6 @@ def about():
           return render_template("about.html", islogin=islogin, site=sitename, about=about_us)
       except:
         return render_template("about.html", site=sitename, about=about_us)
-      
 @app.route('/register', methods=['GET', 'POST'])
 def reg():
  if request.method == 'POST':
