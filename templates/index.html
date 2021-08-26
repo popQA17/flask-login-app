@@ -1,0 +1,204 @@
+<head>
+  <title> {{site}} | Home </title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <style>
+    body{
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+    #login-prompt{
+      color: black;
+    }
+    #main-nav{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0.001px;
+      bottom: 20px;
+    }
+    p {
+      font-size: 20px;
+    }
+  </style>
+ 
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="main-nav" style = "opacity: 0">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">{{site}}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pricing">Pricing Plans</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/applications">Applications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/discord">Discord</a>
+        </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="card">
+  <div class="card-header">
+    📢 Announcement!
+  </div>
+  <div class="card-body">
+    <p> {{announce}} </p>
+  </div>
+</div>
+  <h1 id = "Title1">
+  {{site}}
+  </h1>
+{% if islogin %}
+<a class = "btn btn-secondary" href="/profile"> Go to profile </a>
+{% else %}
+<button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" style = "width: 100px; margin-right: 10px;">Login</button>
+<a class = "btn btn-secondary" href = "/register"> Register </a>
+{% endif %}
+<div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" id = "login-prompt">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasTopLabel" style="color: black;">Login</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+     <form method="POST">
+       <div class="field">
+                <label class="label">Username</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input" type="text" name="username" placeholder="Username">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Password</label>
+                <p class="control has-icons-left">
+                  <input class="input" type="password" name="password" placeholder="Password">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control">
+                  <button type="submit" class="btn btn-info">
+                    Login
+                  </button>
+                </p>
+              </div>
+            </form>
+  </div>
+</div>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section id = "sec2" style = "opacity: 0">
+  <h2>What we offer 👑 </h2>
+  <p>
+    - Custom website, with python as backend
+    - Custom discord bots
+    - Custom logos
+    - A wide array of discord bots (bot listing)
+  </p>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section id = "sec3" style = "opacity: 0">
+  <h2> Interested..? 💭 </h2>
+  <a> View our</a>
+  <a> Pricing Plans </a>
+</section>
+</body>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<script>
+$(document).ready(function(){
+   $('#main-nav').animate({opacity: 1});
+    $("#sec1").delay(1000).animate({opacity: 1});
+     $("#Title1").delay(1000).animate({fontSize: '150px'});
+      $("#sec2").delay(1500).animate({opacity: 1});
+            $("#sec3").delay(2000).animate({opacity: 1});
+   
+});
+
+</script>
