@@ -55,16 +55,25 @@
 </nav>
 
 {% if islogin %}
-<section id = "sec0" style = "height: 100px;" class = "p-3 mb-2 bg-primary text-white">
-<a href = "/profile"class = "btn btn-success"style="text-align: left; margin-top: 20px;"> Profile </a>
-<a href = "/logout" class = "btn btn-danger" style="margin-top: 20px; text-align: right;"> Logout </a>
+<div class="btn-group">
+  <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fas fa-bars"></i> Menu
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/profile">Profile</a></li>
+    <li><a class="dropdown-item" href="/applications">My Applications</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="/logout">Logout</a></li>
+      </ul>
+</div>
 {% else %}
 <a href = "/login" class="btn btn-primary" style="margin-top: 20px;"> Login </a>
 {% endif %}
+
 {% if isadmin %}
-<a href = "/admin" class = "btn btn-light" style="margin-top: 20px;"> Admin Portal </a>
+<a href = "/admin" class = "btn btn-outline-light"> Admin Portal </a>
 {% endif %}
-</section>
+
 <h1>
   Hello {{g.user.username}}!
 </h1>
