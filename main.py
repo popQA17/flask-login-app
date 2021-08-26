@@ -70,15 +70,7 @@ from flask import (
     session,
     url_for
 )
-import textcaptcha
-from threading import Thread
-import json
 import requests
-import discord
-from discord import Webhook, RequestsWebhookAdapter
-
-fetcher = textcaptcha.CaptchaFetcher()
-captcha = fetcher.fetch()
 class User:
     def __init__(self, username, password):
         self.username = username
