@@ -21,7 +21,7 @@
 sitename = "your site's name" # what your site's name is called
 about_us = "your site's info" # what your site is about. Shows in /about
 announcement = "your site's announcement" # the announcement posted on your site's homepage
-discord = "your discord server invite"
+discord = "your discord server invite" # WIP, is not implemented yet.
 admin1 = "admin1's username" # Access to admin portal
 admin2 = "admin2's username"
 admin3 = "admin3's username"
@@ -104,11 +104,11 @@ def profile():
           if g.user.username == admin1 or g.user.username==admin2 or g.user.username==admin3:
             isadmin = True
             print("is admin")
-            return render_template('profile.html',isadmin=isadmin, passwordt=db[g.user.username], site=sitename)
+            return render_template('profile.html',isadmin=isadmin, passwordt=db[g.user.username], site=sitename, discord=discord)
           else:
             print("is not admin")
             isadmin = False
-            return render_template("profile.html", passwordt=db[g.user.username], site=sitename)
+            return render_template("profile.html", passwordt=db[g.user.username], site=sitename, discord=discord)
     except:
         return render_template("profile.html")
 @app.route('/', methods=['GET', 'POST'])
@@ -137,10 +137,10 @@ def home():
     try:
       userse = [x for x in users if x.username == session['username']][0]
       islogin = True
-      return render_template("index.html", islogin=islogin, site=sitename, announce=announcement)
+      return render_template("index.html", islogin=islogin, site=sitename, announce=announcement, discord=discord)
     except:
       islogin = False
-      return render_template("index.html", islogin=islogin, site=sitename, announce=announcement)
+      return render_template("index.html", islogin=islogin, site=sitename, announce=announcement, discord=discord)
 
 @app.route('/applications')
 def apps():
