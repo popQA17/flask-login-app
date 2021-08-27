@@ -2,7 +2,8 @@
 ## Maintained by popQA17 (Pop Plays)
 
 # IMPORTANT!
-the only way to use this system is by using replit, unless you are willing to change all of the databases.
+We recommend you to use Repl.it to host your website? Why? Free deployed Flask App for you on the www (World Wide Web)! Don't like replit? Don't worry, this repository also supports vsc (Visual Stupid Code) and other text editors :)
+
 [fork this repository to replit](https://replit.com/github/popQA17/flask-login-app)
 ### Docs
 
