@@ -1,0 +1,398 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<body style = "background-color: black; text-align: center; color: white;">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<h1> Current maintainance mode: </h1>
+<p id = "mode"> {{ keys }} </p>
+<br>
+<br>
+<h2>
+  Toggle maintainance mode
+</h2>
+       <div class="field">
+            <label class="label" style = "color: white;">Key in: M4inT41nanc3</label>
+            <div class="control has-icons-left has-icons-right">
+            <input class="input" type="text" name="key" placeholder="Maintainance Key" id = "keyhole">
+            <span class="icon is-small is-left">
+              <i class="fas fa-key"></i>
+            </span>
+          </div>
+        </div>
+</body>
+<style>
+  
+/* The switch - the box around the slider */
+.switch2 {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch2 input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider2 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider2:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider2 {
+  background-color: #2196F3;
+}
+
+input:focus + .slider2 {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider2:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider2.round {
+  border-radius: 34px;
+}
+
+.slider2.round:before {
+  border-radius: 50%;
+}
+/* The switch - the box around the slider */
+.switch2 {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch2 input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider2 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider2:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider2 {
+  background-color: #2196F3;
+}
+
+input:focus + .slider2 {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider2:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider2.round {
+  border-radius: 34px;
+}
+
+.slider2.round:before {
+  border-radius: 50%;
+}
+/* The switch - the box around the slider */
+.switch3 {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch3 input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider3 {
+  position: absolute;
+    cursor: default;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider3:before {
+  position: absolute;
+  content: "";
+    cursor: default;
+
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+    background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider3 {
+  background-color: #ccc;
+}
+
+input:focus + .slider3 {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider3:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider3.round {
+  border-radius: 34px;
+}
+
+.slider3.round:before {
+  border-radius: 50%;
+}
+/* The switch - the box around the slider */
+.switch4 {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch4 input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider4 {
+  position: absolute;
+  cursor: default;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider4:before {
+  position: absolute;
+  content: "";
+  cursor: default;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider4 {
+  background-color: #ccc;
+}
+
+input:focus + .slider4 {
+  box-shadow: 0 0 1px #ccc;
+}
+
+input:checked + .slider4:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider4.round {
+  border-radius: 34px;
+}
+
+.slider4.round:before {
+  border-radius: 50%;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+{%if maintain%}
+<div style = "background-color: white; color: black;">
+  <br>
+  Toggle the maintainance mode:
+  <br>
+<div id = "switchdiv" style = "display: none;">
+ <label class="switch">
+ <input type="checkbox" style = "display: none;" id="togBtn" value="true" name="disableYXLogo" checked>
+ <div class="slider round"></div>
+ </label>
+</div>
+<br>
+</div>
+{%else%}
+<div style = "background-color: white; color: black;">
+  <br>
+  Toggle the maintainance mode:
+  <br>
+<div id = "switchdiv" style = "display: none;">
+ <label class="switch2">
+ <input type="checkbox" id="togBtn" style = "display: none;" value="false" name="disableYXLogo">
+ <div class="slider2 round"></div>
+ </div>
+ </label>
+ <br>
+</div>
+{%endif%}
+</div>
+<script>
+$("#keyhole").on('input', function(){
+  
+  if (document.getElementById("keyhole").value == "M4inT41nanc3"){
+
+    document.getElementById("switchdiv").style.display = "block";
+  }
+})
+$("#togBtn").on('change', function() {
+    if ($("#togBtn").is(':checked')) {
+            document.getElementById("switchdiv").style.display = "none";
+                        document.getElementById("mode").innerHTML = "True";
+        $(location).attr('href','https://flask-login-app.popqa17.repl.co/enablemain')
+    }
+    else {
+                  document.getElementById("switchdiv").style.display = "none";
+            document.getElementById("mode").innerHTML = "False";
+
+       $(location).attr('href','https://flask-login-app.popqa17.repl.co/disablemain')
+
+    }
+});
+</script>
