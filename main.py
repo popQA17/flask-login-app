@@ -25,7 +25,7 @@ discord = "your discord server invite" # WIP, is not implemented yet.
 admin1 = "admin1's username" # Access to admin portal
 admin2 = "admin2's username"
 admin3 = "admin3's username"
-
+maintainance_key = "p0pP147s" # Key required to lock the website while you maintain the website temporarily. Admins will still have access to the website.
 
 
 
@@ -82,6 +82,7 @@ class User:
 users = []
 app = Flask('')
 app.secret_key = 'AKEYTHAT0NLYISH0ULDKN0W'
+
 
 @app.errorhandler(404)
 def page_not_found(e):
